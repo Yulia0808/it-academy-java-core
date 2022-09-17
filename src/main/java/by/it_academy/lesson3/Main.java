@@ -5,7 +5,7 @@ import org.w3c.dom.ls.LSOutput;
 public class Main {
     public static void main(String[] args) {
 
-        int giftValue = 2510860;
+        int giftValue = 25160;
         double greatGift = 100 + (giftValue - 5000) * 0.08;
         double veryGreatGift = 1700 + (giftValue - 25000) * 0.1;
 
