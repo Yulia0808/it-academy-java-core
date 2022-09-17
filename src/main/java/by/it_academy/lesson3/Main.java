@@ -5,7 +5,7 @@ import org.w3c.dom.ls.LSOutput;
 public class Main {
     public static void main(String[] args) {
 
-        int giftValue = 5100;
+        int giftValue = 517700;
         double tax = 0;
 
         if (giftValue < 5000) {
