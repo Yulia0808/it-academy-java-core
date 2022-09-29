@@ -3,7 +3,7 @@ package by.it_academy.lesson5;
 public class Whistle {
 
     public static void main(String[] args) {
-        Whistle whistleSound = new Whistle("aaaaaaaaaaaaaa");
+        Whistle whistleSound = new Whistle("aaaaaaaaaaaaaaa");
         whistleSound.sound();
     }
 

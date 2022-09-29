@@ -32,26 +32,26 @@ public class PaymentCard {
     public static void main(String[] args) {
         PaymentCard paymentCard = new PaymentCard(10);
 
-        System.out.println("check balance: " + paymentCard.toString());
+        System.out.println("check balance: " + paymentCard);
 
 
         paymentCard.eatAffordably();
-        System.out.println("check eatAffordably: = " + paymentCard.toString());
+        System.out.println("check eatAffordably: = " + paymentCard);
 
         paymentCard.eatHearty();
-        System.out.println("check eatHearty: = " + paymentCard.toString());
+        System.out.println("check eatHearty: = " + paymentCard);
 
         paymentCard.eatAffordably();
-        System.out.println("check eatAffordably if balance < 2.6: = " + paymentCard.toString());
+        System.out.println("check eatAffordably if balance < 2.6: = " + paymentCard);
 
         paymentCard.eatHearty();
-        System.out.println("check eatHearty if balance < 4.6: " + paymentCard.toString());
+        System.out.println("check eatHearty if balance < 4.6: " + paymentCard);
 
         paymentCard.addMoney(5);
         System.out.println("check addMoney: = " + paymentCard.toString());
 
         paymentCard.addMoney(-100);
-        System.out.println("check addMoney if count negative: = " + paymentCard.toString());
+        System.out.println("check addMoney if count negative: = " + paymentCard);
     }
 }
 
