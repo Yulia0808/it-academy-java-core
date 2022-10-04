@@ -15,18 +15,19 @@ public class PaymentCard {
     }
 
     void eatAffordably() {
-        if (balance - 2.6 > 0)
-            balance -= 2.6;
+        if (balance - 2.6 > 0){
+            balance -= 2.6;}
     }
 
+
     void eatHearty() {
-        if (balance - 4.6 > 0)
-            balance -= 4.6;
+        if (balance - 4.6 > 0){
+            balance -= 4.6;}
     }
 
     void addMoney(double amount) {
-        if (amount >= 0)
-            balance += amount;
+        if (amount >= 0){
+            balance += amount;}
     }
 
     public static void main(String[] args) {
@@ -42,10 +43,10 @@ public class PaymentCard {
         System.out.println("check eatHearty: = " + paymentCard);
 
         paymentCard.eatAffordably();
-        System.out.println("check eatAffordably if balance < 2.6: = " + paymentCard);
+       System.out.println("check eatAffordably if balance < 2.6: = " + paymentCard);
 
         paymentCard.eatHearty();
-        System.out.println("check eatHearty if balance < 4.6: " + paymentCard);
+       System.out.println("check eatHearty if balance < 4.6: " + paymentCard);
 
         paymentCard.addMoney(5);
         System.out.println("check addMoney: = " + paymentCard.toString());
