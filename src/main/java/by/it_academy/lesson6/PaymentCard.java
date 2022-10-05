@@ -1,40 +1,39 @@
-package by.it_academy.lesson5;
+package by.it_academy.lesson6;
 
 public class PaymentCard {
 
     private double balance;
 
     PaymentCard(double balance) {
-
         this.balance = balance;
     }
 
     public String toString() {
-        String info = "The card has a balance of " + balance;
-        return info;
+        return "The card has a balance of " + balance;
     }
 
     void eatAffordably() {
-        if (balance - 2.6 > 0){
-            balance -= 2.6;}
+        if (balance - 2.6 > 0) {
+            balance -= 2.6;
+        }
     }
 
-
     void eatHearty() {
-        if (balance - 4.6 > 0){
-            balance -= 4.6;}
+        if (balance - 4.6 > 0) {
+            balance -= 4.6;
+        }
     }
 
     void addMoney(double amount) {
-        if (amount >= 0){
-            balance += amount;}
+        if (amount >= 0) {
+            balance += amount;
+        }
     }
 
     public static void main(String[] args) {
         PaymentCard paymentCard = new PaymentCard(10);
 
         System.out.println("check balance: " + paymentCard);
-
 
         paymentCard.eatAffordably();
         System.out.println("check eatAffordably: = " + paymentCard);
@@ -43,10 +42,10 @@ public class PaymentCard {
         System.out.println("check eatHearty: = " + paymentCard);
 
         paymentCard.eatAffordably();
-       System.out.println("check eatAffordably if balance < 2.6: = " + paymentCard);
+        System.out.println("check eatAffordably if balance < 2.6: = " + paymentCard);
 
         paymentCard.eatHearty();
-       System.out.println("check eatHearty if balance < 4.6: " + paymentCard);
+        System.out.println("check eatHearty if balance < 4.6: " + paymentCard);
 
         paymentCard.addMoney(5);
         System.out.println("check addMoney: = " + paymentCard.toString());
