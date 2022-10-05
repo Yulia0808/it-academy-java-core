@@ -2,19 +2,27 @@ package by.it_academy.lesson7.Task2;
 
 public class Main {
     public static void main(String[] args) {
-        Counter counter = new Counter(7);
-        System.out.println(counter.value());
-        counter.increase();
-        counter.decrease();
-        counter.increase(1);
-        counter.decrease(2);
+        Counter firstCounter = new Counter();
+        Counter secondCounter = new Counter(5);
 
+        System.out.println("counter: " + firstCounter.getValue());
+        firstCounter.increase();
+        System.out.println("counter increase: value = " + firstCounter.getValue());
+        firstCounter.decrease();
+        System.out.println("counter decrease : value = " + firstCounter.getValue());
+        firstCounter.increase(10);
+        System.out.println("counter increase by value: value = " + firstCounter.getValue());
+        firstCounter.decrease(2);
+        System.out.println("counter decrease : value = " + firstCounter.getValue());
 
-        Counter2 counter2 = new Counter2(0);
-        System.out.println(counter2.value());
-        counter2.increase();
-        counter2.decrease();
-        counter2.increase(4);
-        counter2.decrease(3);
+        System.out.println("second counter: " + secondCounter.getValue());
+        secondCounter.increase();
+        System.out.println("second counter increase: value = " + secondCounter.getValue());
+        secondCounter.decrease();
+        System.out.println("second counter decrease : value = " + secondCounter.getValue());
+        secondCounter.increase(10);
+        System.out.println("second counter increase by value: value = " + secondCounter.getValue());
+        secondCounter.decrease(2);
+        System.out.println("second counter decrease : value = " + secondCounter.getValue());
     }
 }

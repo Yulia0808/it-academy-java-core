@@ -4,32 +4,41 @@ public class Counter {
 
     private int value;
 
-    Counter(int startValue) {
-        this.value = startValue;  //устанавливает начальное значение value на starValue
+    public Counter(int startValue) {
+
+        value = startValue;
     }
 
-    int value() {
+    public Counter() {
+        this.value = 0;
+    }
+
+    public int value() {
         return value;
-    }           //текущее значение счетчика currentValue
+    }
 
-    void increase() {
-        value++;
-        System.out.println(value);
-    }         //увеличивает значение на 1
+    public void increase() {
+        value = value + 1;
 
-    void decrease() {
-        value--;
-        System.out.println(value);
-    }        // уменьшает значение на 1
+    }
 
-    void increase(int increaseBy) {
-        value += increaseBy;
-        System.out.println(value);
-    }          // увеличивает на указанное значение
+    public void decrease() {
+        value = value - 1;
+    }
 
-    void decrease(int decreaseBy) {
-        value -= decreaseBy;
-        System.out.println(value);
-    }          // уменьшвет на указанное значение
+    public void increase(int increaseBy) {
+        value = value + increaseBy;
+    }
+
+    public void decrease(int decreaseBy) {
+        value = value - decreaseBy;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
+    }
 }
-//нужно переиспользовать методы для уменьшения дублирования кода
