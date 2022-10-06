@@ -1,4 +1,4 @@
-package by.it_academy.lesson7.Task2;
+package by.it_academy.lesson7.task2;
 
 public class Counter {
 
@@ -10,12 +10,9 @@ public class Counter {
     }
 
     public Counter() {
-        this.value = 0;
+       this.value = 0;
     }
 
-    public int value() {
-        return value;
-    }
 
     public void increase() {
         value = value + 1;
@@ -38,7 +35,7 @@ public class Counter {
         return value;
     }
 
-    public void setValue(int value) {
-        this.value = value;
-    }
+   // public void setValue(int value) {
+     //   this.value = value;
+   // }
 }

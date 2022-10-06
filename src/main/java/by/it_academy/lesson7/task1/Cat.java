@@ -1,4 +1,4 @@
-package by.it_academy.lesson7.Task1;
+package by.it_academy.lesson7.task1;
 
 
 public class Cat extends Animal implements NoiseCapable{
@@ -8,7 +8,7 @@ public class Cat extends Animal implements NoiseCapable{
     }
 
     public Cat() {
-        super(" ");
+        super("Cat");
     }
 
     void purr() {
