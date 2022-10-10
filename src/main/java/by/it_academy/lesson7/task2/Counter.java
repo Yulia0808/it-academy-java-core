@@ -10,17 +10,17 @@ public class Counter {
     }
 
     public Counter() {
-       this.value = 0;
+       this(0);
     }
 
 
     public void increase() {
-        value = value + 1;
+        increase(1);
 
     }
 
     public void decrease() {
-        value = value - 1;
+        decrease(1);
     }
 
     public void increase(int increaseBy) {
@@ -35,7 +35,4 @@ public class Counter {
         return value;
     }
 
-   // public void setValue(int value) {
-     //   this.value = value;
-   // }
 }
