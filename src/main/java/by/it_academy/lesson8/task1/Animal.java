@@ -1,10 +1,10 @@
-package by.it_academy.lesson8.taskFirst;
+package by.it_academy.lesson8.task1;
 
-public abstract class Animals {
+public abstract class Animal {
 
     private final String animal;
 
-    protected Animals(String animal) {
+    protected Animal(String animal) {
         this.animal = animal;
     }
 
