@@ -6,7 +6,7 @@ public class Dog extends Animal {
     }
 
     public void drink() {
-        System.out.println(animal() + " drink");
+        System.out.println(name() + " drink");
 
     }
 }

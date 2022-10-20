@@ -2,17 +2,17 @@ package by.it_academy.lesson8.task1;
 
 public abstract class Animal {
 
-    private final String animal;
+    private final String name;
 
-    protected Animal(String animal) {
-        this.animal = animal;
+    protected Animal(String name) {
+        this.name = name;
     }
 
-    public String animal() {
-        return animal;
+    public String name() {
+        return name;
     }
 
     public void sleep() {
-        System.out.println(animal() + " sleep");
+        System.out.println(name() + " sleep");
     }
 }
