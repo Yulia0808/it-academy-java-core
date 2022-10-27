@@ -21,12 +21,17 @@ public class Card {
         if (cost < 11) {
             return String.valueOf(cost);
         }
-        return switch (cost) {
-            case 11 -> "J";
-            case 12 -> "Q";
-            case 13 -> "K";
-            case 14 -> "A";
-            default -> "";
-        };
+        switch (cost) {
+            case 11:
+                return "J";
+            case 12:
+                return "Q";
+            case 13:
+                return "K";
+            case 14:
+                return "A";
+            default:
+                return "";
+        }
     }
 }
