@@ -1,11 +1,11 @@
-package by.it_academy.lesson10.task2;
+package by.it_academy.lesson11.task2;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
 public class AverageSensor implements Sensor {
 
-    private Collection<Sensor> sensors = new ArrayList<>();
+    private final Collection<Sensor> sensors = new ArrayList<>();
 
     public static void main(String[] args) {
         AverageSensor averageSensor = new AverageSensor();
@@ -27,7 +27,7 @@ public class AverageSensor implements Sensor {
                 return false;
             }
         }
-        return false;
+        return true;
     }
 
     @Override

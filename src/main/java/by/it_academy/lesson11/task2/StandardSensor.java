@@ -1,14 +1,12 @@
-package by.it_academy.lesson10.task2;
+package by.it_academy.lesson11.task2;
 
-
-public class StandardSensor implements Sensor{
+public class StandardSensor implements Sensor {
 
     private final int value;
 
     public StandardSensor(int value) {
         this.value = value;
     }
-
 
     @Override
     public boolean isOn() {
@@ -21,13 +19,11 @@ public class StandardSensor implements Sensor{
 
     @Override
     public void setOff() {
-
     }
 
     @Override
     public int read() {
-
-    return value;
+        return value;
     }
 
 }

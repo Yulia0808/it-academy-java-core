@@ -1,4 +1,4 @@
-package by.it_academy.lesson10.task2;
+package by.it_academy.lesson11.task2;
 
 public interface Sensor {
     boolean isOn();
