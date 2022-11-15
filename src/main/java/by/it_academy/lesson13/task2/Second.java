@@ -29,8 +29,8 @@ public class Second {
     }
 
     public static boolean primeNumber(int number) {
-        return !IntStream.rangeClosed(2, number / 2)
-                .allMatch(i -> number % i == 0);
+        return IntStream.rangeClosed(2, number / 2)
+                .noneMatch(i -> number % i == 0);
     }
 }
 
